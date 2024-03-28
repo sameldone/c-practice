@@ -4,5 +4,6 @@
 #include <stdio.h>
 int main();
 int _putchar(char ch);
+void print_alphabet();
 
 #endif

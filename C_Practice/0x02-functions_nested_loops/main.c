@@ -1,12 +1,12 @@
 #include "sameldone.h"
 
 /**
- * main - check the code
+ * main - check the code.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    jack_bauer();
-    return (0);
+	fibonacci_98();
+	return (0);
 }

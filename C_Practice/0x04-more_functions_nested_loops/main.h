@@ -5,5 +5,10 @@
 
 int _isupper(int letter);
 int _isdigit(int digit);
+int mul(int first, int second);
+int _putchar(char ch);
+void print_numbers(void);
+void print_most_numbers(void);
+void more_numbers(void);
 
 #endif

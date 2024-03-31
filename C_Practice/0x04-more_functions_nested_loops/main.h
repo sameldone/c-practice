@@ -13,5 +13,7 @@ void more_numbers(void);
 void print_line(int i);
 void print_diagonal(int i);
 void print_square(int digit);
+void fizz_buzz(void);
+void print_triangle(int n);
 
 #endif

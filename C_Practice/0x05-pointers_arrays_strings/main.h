@@ -10,5 +10,6 @@ void swap_int(int *a_ptr, int *b_ptr);
 int _strlen(char *str);
 void _puts(char *str);
 void print_rev(char *str);
+void rev_string(char *str);
 
 #endif

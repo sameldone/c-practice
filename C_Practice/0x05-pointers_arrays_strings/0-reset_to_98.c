@@ -9,5 +9,5 @@
 void reset_to_98(int *nptr)
 {
 
-	*nptr=98;
+	*nptr=98;/* *nptr=*(The address of nptr). Whatever is in the address of nptr change it to 98*/
 }

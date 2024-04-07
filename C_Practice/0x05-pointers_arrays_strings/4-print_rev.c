@@ -10,10 +10,10 @@ void print_rev(char *str)
 {
 	int i;
 
-	for(i=_strlen(str);i>=0;i--)
+	for(i=_strlen(str);i>=0;i--)/*As long as i not less than zero, the decrement i*/
 	{
 
-		_putchar(str[i]);
+		_putchar(*(str+i));/*print the item at the address coresponding to index i*/
 	}
 	_putchar('\n');
 }

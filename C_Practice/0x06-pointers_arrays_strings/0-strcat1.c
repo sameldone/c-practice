@@ -1,12 +1,12 @@
 /******************************************************************
- * 1-strncat.c
- * _strncat()-concatnates a string upto n
- * Return-destination string
+ * 0-strcat1.c
+ * _strcat.c-concatnates two strings
+ * Return-destination of the concatnated string
  * *****************************************************************/
 
 #include "main.h"
 
-char *_strncat(char *dest,char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i=0;
 	int j=0;
@@ -15,13 +15,13 @@ char *_strncat(char *dest,char *src, int n)
 	{
 		i++;
 	}
-	while(src[j]!=src[n])
+	while(src[j]!='\0')
 	{
 		dest[i]=src[j];
-		i++;
 		j++;
+		i++;
 	}
 	dest[i]='\0';
-
+	
 	return(dest);
 }

@@ -10,6 +10,9 @@ void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x,int y);
+int _find_sqrt(int n,int root);
+int _sqrt_recursion(int n);
+
 
 
 #endif

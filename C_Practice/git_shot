@@ -10,7 +10,7 @@ read msg
 msg="$msg - $(date+"%Y-%m-%d %T")"
 
 # Commit with a message for the current date and time
-git commit -m "Update $msg"
+git commit -m "Update: $msg"
 
 # Push changes to the remote repository
 git push

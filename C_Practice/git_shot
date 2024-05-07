@@ -3,7 +3,7 @@
 # Add all files
 git add .
 
-# Commit with a unique message including the current date and time
+# Commit with a message for the current date and time
 git commit -m "Update $(date +"%Y-%m-%d %T")"
 
 # Push changes to the remote repository

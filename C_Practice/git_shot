@@ -1,6 +1,11 @@
 #!/bin/bash
+
+# Add all files
 git add .
-echo "Enter Commit message"
-msg
-git commit -m "${msg}"
+
+# Commit with a unique message including the current date and time
+git commit -m "Update $(date +"%Y-%m-%d %T")"
+
+# Push changes to the remote repository
 git push
+

@@ -4,10 +4,11 @@
  *
  * return-1 on success
  * **********************************************************************************************************/
+#include "main.h"
 
 int put_mod(void)
 {
 	_putchar(37);
 
-	return(SUCCESS);
+	return(1);
 }

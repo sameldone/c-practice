@@ -12,5 +12,5 @@ int print_char(va_list args)
 	
 	ch = va_arg(args,int);
 	_putchar(ch);
-	return(SUCCESS);
+	return(1);
 }

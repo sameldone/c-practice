@@ -26,7 +26,7 @@ int put_bin(va_list args)
 		if(flag)
 		{
 			bin=p>>(31-i);
-			_putchar(b+'0');
+			_putchar(bin+'0');
 			count++;
 		}
 	}

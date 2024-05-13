@@ -10,9 +10,9 @@
 
 int put_double(va_list args)
 {
-	int i,num,digit,place,last,tmp,count;
+	int num,digit,place,last,tmp,count;
 
-	num=va_arg(args);
+	num=va_arg(args,int);
 	tmp=num;
 	last=num/10;
 	place=1;
@@ -31,8 +31,18 @@ int put_double(va_list args)
 		place*=10;
 		num/=place;
 	}
-	while(place)
+	while(place>0)
 	{
+		digit=num/place;
+		_putchar(digit+'0');
+		num=num-(digit*place);
+		place=place/10;
+		count++;
+	}
+	_putchar(last+'0');
+
+	return(count);
+}
 
 
 

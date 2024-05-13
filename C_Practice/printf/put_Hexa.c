@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-int put_Hexa(unsigned int num)
+int put_Hexa(unsigned long  int num)
 {
         int i,count=0,tmp;
         int *array;
@@ -21,7 +21,7 @@ int put_Hexa(unsigned int num)
         }
         count++;
 
-        array=malloc(sizeof(unsigned int)*count);
+        array=malloc(sizeof(unsigned long int)*count);
 
         if(!array)
         {

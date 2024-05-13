@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-int put_Hex(unsigned long int num)
+int put_hexa(unsigned long int num)
 {
         unsigned long int i,count=0,tmp;
         int *array;

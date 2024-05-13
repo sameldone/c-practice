@@ -11,6 +11,22 @@ int _printf(const char *format, ...)
 	int i,j,len;
 	va_list args;
 	
+	match specifier[]={
+		{"%c",print_char},
+		{"%s",print_str},
+		{"%%",put_mod},
+		{"%d",print_double},
+		{"%i",print_num},
+		{"%r",rev_str},
+		{"%R",rot13},
+		{"%b",put_bin},
+		{"%u",print_unsigned},
+		{"%o",put_octal},
+		{"%x",put_hex},
+		{"%X",put_Hex},
+		{"%S",print_Str},
+		{"%p",print_p}
+	};
 
 	i=0;
 	len=0;
@@ -21,23 +37,7 @@ int _printf(const char *format, ...)
 	}
 
 
-	match specifier[]={
-		{"%c",print_char},
-		{"%s",print_str},
-		{"%%",put_mod},
-		{"%d",print_double},
-		{"%i",print_num},
-		{"%r",rev_str},
-		{"%R",rot13},
-		{"%b",put_binary},
-		{"%u",print_unsigned},
-		{"%o",put_octal},
-		{"%x",put_hex},
-		{"%X",put_Hex},
-		{"%S",print_Str},
-		{"%p",print_p}
-	};
-
+Here:
 	while(format[i]=='\0')
 	{
 		j=13;
@@ -47,6 +47,7 @@ int _printf(const char *format, ...)
 			{
 				len=len+specifier[j].f(args);
 				i=i+2;
+				goto Here;
 			}
 			j--;
 		}
